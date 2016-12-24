@@ -1,0 +1,36 @@
+:root {
+  --backlist-image-width: 150px;
+  --backlist-image-height: 213px;
+}
+
+.backlist {
+  position: relative;
+  width: 100%;
+  background-color: var(--bg);
+
+  .backlist__image {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 40px 0;
+
+    .image__content {
+      @apply --image-block;
+
+      width: var(--backlist-image-width);
+      height: var(--backlist-image-height);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      transition: opacity .3s;
+
+      &:hover {
+        opacity: .8;
+      }
+    }
+  }
+
+  .backlist__store-button {
+    margin: 30px auto 0;
+    background-color: var(--button);
+  }
+}

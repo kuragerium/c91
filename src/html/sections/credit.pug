@@ -1,0 +1,51 @@
+include ../components/headline
+include ../components/subhead
+section.credit
+  div.credit__wrapper.wrapper
+    +headline('CREDIT')
+    div.credit__member.credit__member--illustrator
+      +subhead('ILLUSTRATOR')
+      div.member__wrapper
+        div.member__content
+          div.content__image
+            img(src='img/mktx.jpg')
+          div.content__author
+            h3 海月みこと
+          div.content__sns.content__sns--twitter
+            a(href='https://twitter.com/mktx')
+              | Twitter
+          div.content__sns.content__sns--pixiv
+            a(href='http://www.pixiv.net/member.php?id=13680')
+              | Pixiv
+        div.member__content
+          div.content__image
+            img(src='img/k00jniconico.png')
+          div.content__author
+            h3 海月つかさ
+          div.content__sns.content__sns--twitter
+            a(href='https://twitter.com/k00jniconico')
+              | Twitter
+          div.content__sns.content__sns--pixiv
+            a(href='http://www.pixiv.net/member.php?id=1528082')
+              | Pixiv
+    div.credit__member.credit__member--designer
+      div.member__wrapper.member__wrapper--block
+        +subhead('COVER DESIGNER')
+        div.member__content
+          div.content__image.content__image--no-image
+            span NO IMAGE
+          div.content__author
+            h3 ゆち / re_projects
+          div.content__sns.content__sns--twitter
+            a(href='https://twitter.com/yuchi_re')
+              | Twitter
+      div.member__wrapper.member__wrapper--block
+        +subhead('WEB DESIGNER')
+        div.member__content
+          div.content__image
+            img(src='img/polyxx.jpg')
+          div.content__author
+            h3 汐瀬なぎ / Polychrome
+          div.content__sns.content__sns--twitter
+            a(href='https://twitter.com/polyxx')
+              | Twitter

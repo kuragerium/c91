@@ -1,0 +1,17 @@
+include ../components/headline
+section.sample
+  div.sample__wrapper.wrapper
+    +headline('SAMPLE')
+    div.sample__image(
+      data-aos='fade-up'
+      data-aos-anchor='.sample'
+      data-aos-once='true'
+    )
+      each index in [1, 2, 3]
+        a(
+          href=`img/sample${index}.png`
+          data-lightbox='sample'
+        )
+          div.image__content(
+            style=`background-image: url(img/sample${index}.png)`
+          )

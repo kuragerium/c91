@@ -1,0 +1,17 @@
+include ../components/headline
+section.backlist
+  div.backlist__wrapper.wrapper
+    +headline('BACKLIST')
+    div.backlist__image
+      each index in [1, 2, 3]
+        div.image__content(
+          style=`background-image: url(img/bklist${index}.jpg)`
+        )
+    div.backlist__image
+      each index in [4, 5, 6]
+        div.image__content(
+          style=`background-image: url(img/bklist${index}.jpg)`
+        )
+    div.backlist__store-button.button
+      a(href='https://www.melonbooks.co.jp/circle/index.php?circle_id=25733')
+        div 店舗委託

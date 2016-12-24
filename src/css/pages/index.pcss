@@ -1,0 +1,53 @@
+@import "sections/backlist.pcss";
+@import "sections/credit.pcss";
+@import "sections/footer.pcss";
+@import "sections/hero.pcss";
+@import "sections/information.pcss";
+@import "sections/loading.pcss";
+@import "sections/sample.pcss";
+
+body {
+  &[data-loading="loading"] {
+    .container {
+      overflow: hidden;
+      visibility: hidden;
+      opacity: 0;
+    }
+
+    .loading {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+  &[data-loading="loaded"] {
+    .container {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    .loading {
+      visibility: hidden;
+      opacity: 0;
+    }
+  }
+}
+
+.container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  transition: opacity 1s;
+}
+
+.bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}

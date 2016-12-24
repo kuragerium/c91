@@ -1,0 +1,32 @@
+:root {
+  --sample-image-width: 198px;
+  --sample-image-height: 280px;
+}
+
+.sample {
+  position: relative;
+  width: 100%;
+  background-color: var(--bg);
+
+  .sample__image {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 40px 0;
+
+    .image__content {
+      @apply --image-block;
+
+      width: var(--sample-image-width);
+      height: var(--sample-image-height);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      cursor: pointer;
+      transition: opacity .3s;
+
+      &:hover {
+        opacity: .8;
+      }
+    }
+  }
+}

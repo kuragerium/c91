@@ -1,0 +1,39 @@
+html {
+  font-size: 62.5%;
+  min-width: var(--wrapper-width);
+  height: 100%;
+}
+
+body {
+  font-size: var(--default-font-size);
+  font-family: var(--default-font-family);
+  height: 100%;
+  color: var(--text-dark);
+  text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  font-family: var(--bold-font-famliy);
+}
+
+img {
+  border-radius: 5px;
+}
+
+a {
+  color: var(--text-dark);
+  text-decoration: none;
+  cursor: pointer;
+  transition: color .3s;
+
+  &:hover {
+    color: rgba(0, 0, 0, .48);
+  }
+}
